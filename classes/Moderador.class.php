@@ -46,8 +46,21 @@
 				
 			}
 			
+			return TRUE;
+						
 		}
 		
 	}
+	
+	$moderador = new Moderador("gleison");
+	
+	try{
+		$moderador->adicionaQuestao("gleison", "", "jose", "marcos", "brasil", "erick", "lllllll");	
+	}
+	catch(Exception $e){
+		echo($e->getMessage());
+	}
+	
+	
 	
 ?>
