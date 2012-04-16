@@ -8,9 +8,9 @@
 	 */
 	class TestOfModerador extends UnitTestCase {
 		function testAdicionaQuestao(){
-			$moderador = new Moderador("gleison");
+			$moderador = new Moderador("jose");
 			
-			$this->expectException($moderador->adicionaQuestao("ddddddd","brasil","argentina","paraguai","usa","bolivia","brasil"));
+			$this->expectException($moderador->adicionaQuestao("","brasil","argentina","paraguai","usa","bolivia","brasil"));
 		}	
 	}
 	
