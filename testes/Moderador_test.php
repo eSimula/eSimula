@@ -8,23 +8,23 @@
 	 */
 	
 	class TestOfModerador extends UnitTestCase {
-		/*
+		
 		function testAdicionaQuestao(){
 			$moderador = new Moderador("gleison");
 			
-			$this->ignoreException($moderador->adicionaQuestao("gleison","jose","argentina","paraguai","usa","bolivia","brasil"));
+			$this->ignoreException($moderador->adicionaQuestao("gleison","","argentina","paraguai","usa","bolivia","brasil"));
 		}	
 		
 		function testPesquisaMembro(){
-			$moderador = new Moderador("sara");
+			$moderador2 = new Moderador("sara");
 			
-			$this->assertFalse($moderador->pesquisaMembro(40));
+			$this->assertFalse($moderador2->pesquisaMembro(40));
 		}
-		*/
+		
 		function testPesquisaQuestao(){
-			$moderador = new Moderador("sara");
+			$moderador3 = new Moderador("sara");
 			
-			$this->assertFalse($moderador->pesquisaQuestao(40));
+			$this->assertFalse($moderador3->pesquisaQuestao(40));
 		}
 		
 	}
