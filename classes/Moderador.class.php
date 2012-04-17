@@ -50,6 +50,24 @@
 						
 		}
 		
+		function pesquisaMembro($id){
+			$vetorMembros = array("gleison","kayro","allan","andre");
+			
+			if (!$vetorMembros[$id]) {
+				throw new Exception("Membro nao encontrado!");
+			}
+			
+		}
+		
+		function pesquisaQuestao($id){
+			$vetorQuestao = array("gleison","kayro","allan","andre");
+			
+			if (!$vetorQuestao[$id]) {
+				throw new Exception("Questao nao encontrada!");
+			}
+			
+		}
+		
 	}
 	
 	

@@ -6,12 +6,27 @@
 	/**
 	 * 
 	 */
+	
 	class TestOfModerador extends UnitTestCase {
+		/*
 		function testAdicionaQuestao(){
-			$moderador = new Moderador("jose");
+			$moderador = new Moderador("gleison");
 			
-			$this->ignoreException($moderador->adicionaQuestao("","gleison","argentina","paraguai","usa","bolivia","brasil"));
+			$this->ignoreException($moderador->adicionaQuestao("gleison","jose","argentina","paraguai","usa","bolivia","brasil"));
 		}	
+		
+		function testPesquisaMembro(){
+			$moderador = new Moderador("sara");
+			
+			$this->assertFalse($moderador->pesquisaMembro(40));
+		}
+		*/
+		function testPesquisaQuestao(){
+			$moderador = new Moderador("sara");
+			
+			$this->assertFalse($moderador->pesquisaQuestao(40));
+		}
+		
 	}
 	
 ?>
