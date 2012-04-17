@@ -10,7 +10,7 @@
 		function testAdicionaQuestao(){
 			$moderador = new Moderador("jose");
 			
-			$this->expectException($moderador->adicionaQuestao("petisko","gleison","argentina","paraguai","usa","bolivia","brasil"));
+			$this->ignoreException($moderador->adicionaQuestao("","gleison","argentina","paraguai","usa","bolivia","brasil"));
 		}	
 	}
 	
