@@ -12,6 +12,18 @@
 			
 			$this->ignoreException($simulado->geraSimulado());
 		}
+		
+		function testExibirScore(){
+			$simulado2 = new Simulado();
+			
+			$this->ignoreException($simulado2->geraSimulado());
+		}
+		
+		function testExibirColocacao(){
+			$simulado3 = new Simulado();
+			
+			$this->ignoreException($simulado3->exibirColocacao(-6));
+		}
 	}
 	
 ?>

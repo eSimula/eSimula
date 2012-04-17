@@ -11,5 +11,26 @@
 				
 			}
 		}
+		
+		function exibirScore($num){
+			//num = quantidade de questoes acertadas
+			
+			if ($num < 0 or $num > 10) {
+				throw new Exception("Score incorreto");
+				
+			}
+		}
+		
+		
+		function exibirColocacao($quantQuestaoTotal){
+			if ($quantQuestaoTotal < 0) {
+				throw new Exception("Quantidade de Questoes invalidas");
+				
+			}
+			
+			
+			 
+			
+		}
 	}
 ?>
