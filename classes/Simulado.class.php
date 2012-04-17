@@ -23,14 +23,21 @@
 		
 		
 		function exibirColocacao($quantQuestaoTotal){
-			if ($quantQuestaoTotal < 0) {
-				throw new Exception("Quantidade de Questoes invalidas");
-				
+			$vetor = array(30,40,45,60,12,56);
+			rsort($vetor);
+			//print_r($vetor);
+			$colocacao = array_keys($vetor,$quantQuestaoTotal);
+			
+			if ($colocacao) {
+				return($colocacao[0]+1);
+			}else{
+				return(-1);	
 			}
-			
-			
-			 
 			
 		}
 	}
+	
+	$simulado = new Simulado();
+	
+	print($simulado->exibirColocacao(12));
 ?>

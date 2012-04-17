@@ -22,7 +22,7 @@
 		function testExibirColocacao(){
 			$simulado3 = new Simulado();
 			
-			$this->ignoreException($simulado3->exibirColocacao(-6));
+			$this->assertEqual($simulado3->exibirColocacao(60),1);
 		}
 	}
 	
