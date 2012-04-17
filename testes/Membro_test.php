@@ -15,6 +15,13 @@
 			
 		}
 		
+		function testEnviarResposta(){
+			$membro2 = new Membro("gleison");
+			
+			$this->ignoreException($membro2->enviarResposta("alternativa1","alternativa2"));
+			
+		}
+		
 	}
 	
 ?>

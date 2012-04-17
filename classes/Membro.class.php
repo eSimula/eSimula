@@ -1,4 +1,6 @@
-<?php  
+<?php
+	require_once 'Usuario.class.php';
+  
 	/**
 	 * 
 	 */
@@ -16,6 +18,24 @@
 			return TRUE;
 		}
 		
+		function enviarResposta(){
+			$numargs = func_num_args();
+			if ($numargs != 1) {
+				throw new Exception("Numero de argumentos invalidos");
+				
+			}
+		}
+		
 	}
+	
+	$membro = new Membro("gleison");
+	
+	try{
+		$membro->enviarResposta("gleison","jose");	
+	}
+	catch(Exception $e){
+		echo($e->getMessage());
+	} 
+	 
 	
 ?>
