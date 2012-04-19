@@ -5,6 +5,6 @@
 		function __construct($nome) {
 			$this->nome = $nome;
 		}
-		
+		//comentario
 	}
 ?>
