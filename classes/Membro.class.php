@@ -8,6 +8,7 @@
 	//soh um teste 
 	//outro coentario
 	//gleison
+	//comentario
 	class Membro extends Usuario {
 		
 		function __construct($nome){
