@@ -6,6 +6,7 @@
 	 */
 	 
 	//soh um teste 
+	//outro coentario
 	class Membro extends Usuario {
 		
 		function __construct($nome){
