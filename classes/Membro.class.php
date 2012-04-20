@@ -10,6 +10,7 @@
 	//gleison
 	//comentario
 	//comentario2
+	//comentario3
 	class Membro extends Usuario {
 		
 		function __construct($nome){
