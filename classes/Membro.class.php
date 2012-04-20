@@ -11,6 +11,7 @@
 	//comentario
 	//comentario2
 	//comentario3
+	//comentario4
 	class Membro extends Usuario {
 		
 		function __construct($nome){
