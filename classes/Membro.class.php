@@ -9,6 +9,7 @@
 	//outro coentario
 	//gleison
 	//comentario
+	//comentario2
 	class Membro extends Usuario {
 		
 		function __construct($nome){
